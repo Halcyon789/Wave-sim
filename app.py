@@ -1,4 +1,7 @@
+# DataFrame 변환 전에 timestamp 필터 추가
+data = [d for d in data if "timestamp" in d and d["timestamp"] != ""]
 
+# 이후에 df = pd.DataFrame(data) 수행
 import streamlit as st
 import pandas as pd
 import numpy as np
